@@ -30,8 +30,5 @@ File change detection: Identifies newly added or deleted files within the monito
 | Route | Method | Body | Response | Description |
 |---|---|---|---|---|
 | /task/start | POST | None | { message: 'Task started successfully' } | Starts the monitoring task if not already running. |
-| /tast/stop | POST | TaskId |	{ message: 'Task stopped successfully' } | Stops the monitoring task if currently running. |
+| /tast/stop | POST | taskId |	{ message: 'Task stopped successfully' } | Stops the monitoring task if currently running. |
 | /task-runs | GET	| NONE | { [tasks] } | Retrive all tasks in the response of JSON. |
-|---------------|--------|--------|------------------------------------------|----------------------------------------------------|
-| /task-runs	  | GET	   |        |	{ [tasks] }                              | Retrive all tasks in the response of array         |
-|---------------|--------|--------|------------------------------------------|----------------------------------------------------|
